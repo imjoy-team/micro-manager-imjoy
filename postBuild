@@ -1,3 +1,4 @@
 #!/bin/bash
 wget https://github.com/oeway/micromanager-demo/releases/download/0.1.0/DemoCamera-ubuntu-18.04.zip
-unzip DemoCamera-ubuntu-18.04.zip -d ./driver-adapters
+unzip DemoCamera-ubuntu-18.04.zip -d ./mmcore
+cd ./mmcore && wget https://raw.githubusercontent.com/micro-manager/micro-manager/master/bindist/any-platform/MMConfig_demo.cfg
